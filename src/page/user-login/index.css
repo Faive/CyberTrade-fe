@@ -55,11 +55,9 @@
 	bottom: 1px;
 	width: 40px;
 	line-height: 36px;
-	background: #f3f3f3;
 	font-size: 18px;
 	color: #d3d3d3;
 	text-align: center;
-	border-right: 1px solid #bdbdbd;
 }
 
 .user-con .user-item .user-content{
