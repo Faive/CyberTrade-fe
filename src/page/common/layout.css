@@ -90,3 +90,23 @@ input[type='checkbox']{
 	background: url(../../image/icon/loading.gif) no-repeat;
 	opacity: .5;
 }
+
+/*panel*/
+.panel{
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+
+.panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+
+.panel .panel-body{
+	padding: 10px;
+	overflow: hidden;
+}

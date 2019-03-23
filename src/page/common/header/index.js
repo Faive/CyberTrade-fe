@@ -17,6 +17,9 @@ var header = {
     },
     bindEvent : function(){
     	var _this = this;
+        $('.header .logo').click(function(){
+            _ct.goHome();
+        });
     	//点击搜索按钮后提交搜索
     	$('#search-btn').click(function(){
     		_this.searchSubmit();

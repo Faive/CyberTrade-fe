@@ -2,7 +2,7 @@
 <html>
 <head>
 	<%= require('html-loader!./layout/head-common.html') %>
-	<title>CyberTrade在线交系统</title>	
+	<title><%=htmlWebpackPlugin.options.title%> - CyberTrade</title>	
 </head>
 
 <body>
@@ -10,8 +10,12 @@
 	<%= require('html-loader!./layout/header.html') %>
 	<div class="page-wrap w">
 		<%= require('html-loader!./layout/nav-side.html') %>
-		<div class="content with-nav"></div>
+		<div class="content with-nav">
+			
+		</div>		
 	</div>
-	<%= require('html-loader!./layout/footer.html') %>
+	<div>
+	<%= require('html-loader!./layout/footer.html')%>		
+	</div>
 </body>
 </html>

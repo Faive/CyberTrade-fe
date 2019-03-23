@@ -8,6 +8,9 @@
 .nav .user{
 	float: left;
 }
+.nav .js-logout{
+	margin-left: 20px;
+}
 .nav .user.login{
 	display: none;
 	float: left;

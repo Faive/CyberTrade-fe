@@ -1,0 +1,18 @@
+
+.pass-update{
+	width: 400px;
+	margin: 20px  auto;
+}
+
+.input-item{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.input-item .label{
+	text-align: right;
+	display: inline-block;
+	width: 65px;
+}

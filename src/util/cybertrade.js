@@ -1,6 +1,8 @@
 'use strict';
 var conf = {
-	serverHost	: ''
+	serverHost	: 'http://120.78.175.234:8080/mmall'
+	//serverHost	: ''
+
 };
 
 var Hogan = require('hogan');
@@ -13,6 +15,11 @@ var _ct = {
 			url			: param.url		|| '',
 			dataType	: param.type 	|| 'json',
 			data 		: param.data 	|| '',
+			/* ------跨域请求设置--------*/
+			header		: {"Access-Control-Allow-Origin" : "*"},
+			xhrFields   : {withCredentials:true},
+			/* ------跨域请求设置--------*/
+
 			success 	: function(res){
 				//请求成功
 				if(0 === res.status){
@@ -70,7 +77,7 @@ var _ct = {
 		var value = $.trim(value);
 
 		//非空验证
-		if('require' === type){
+		if('nonempty' === type){
 			return !!value;
 		}
 
@@ -86,7 +93,7 @@ var _ct = {
 	},
 	//强制登陆
 	doLogin : function(){
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 
 	//跳转主页

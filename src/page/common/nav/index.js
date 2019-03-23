@@ -16,6 +16,7 @@ var nav = {
         // 登录点击事件
         $('.js-login').click(function(){
             _ct.doLogin();
+
         });
         // 注册点击事件
         $('.js-register').click(function(){
@@ -34,9 +35,10 @@ var nav = {
     loadUserInfo : function(){
         _user.checkLogin(function(res){
             $('.user.not-login').hide().siblings('.user.login').show()
-                .find('.username').text(res.username);
+                .find('.link.username').text(res.username );
         }, function(errMsg){
             // do nothing
+
         });
     },
     // 加载购物车数量

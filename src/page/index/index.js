@@ -6,5 +6,5 @@ require('./index.css');
 var _ct = require('util/cybertrade.js');
 
 navSide.init({
-	name : 'pass-update'
+	name : 'user-center'
 });

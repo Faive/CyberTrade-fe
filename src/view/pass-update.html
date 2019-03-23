@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title><%=htmlWebpackPlugin.options.title%> - CyberTrade</title>	
+</head>
+
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/header.html') %>
+	<div class="crumb"></div>
+	<div class="crumb">
+		<div class="w">
+			<div class="crumb-con">
+				<a class="link" href="./index.html">CyberTrade</a>
+				<span>></span>
+				<span class="link-text"><%=htmlWebpackPlugin.options.title%></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-wrap w">
+		<%= require('html-loader!./layout/nav-side.html') %>
+		<div class="content with-nav">
+			<div class="pass-update">
+				<div class="input-item">
+					<label class="label">原密码:</label>
+					<input class="input" id="password" placeholder="请输入原密码" type="password"></input>
+				</div>
+
+				<div class="input-item">
+					<label class="label">新密码:</label>
+					<input class="input" id="passwordNew" placeholder="请输入新密码" type="password"></input>
+				</div>
+
+				<div class="input-item">
+					<label class="label">确认密码:</label>
+					<input class="input" id="passwordConfirm" placeholder="请再次输入新密码" type="password"></input>
+				</div>
+				<a class="btn" id="submit">确认修改</a>
+			</div>
+		</div>
+		
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title><%=htmlWebpackPlugin.options.title%> - CyberTrade</title>	
+</head>
+
+<body>
+	<%= require('html-loader!./layout/nav-simple.html') %>
+	<div class="page-wrap">
+		<div class="w">
+			<div class="user-con">
+				<div class="user-title">密码重置</div>
+				<div class="user-box">
+					<div class="error-item">
+						<i class="fa fa-minus-circle error-icon"></i>
+						<p class="err-msg">Error</p>
+					</div>
+					<div class="step-con step-username">
+						<p class="user-item-note">请输入用户名:</p>
+						<div class="user-item">
+							<label class="user-label" for="username">
+								<i class="fa fa-user"></i>	
+							</label>
+							<input class="user-content" id="username" placeholder="用户名" autocomplete="off"></input>
+						</div>
+						<a class="btn" id="submit-username">下一步</a>
+					</div>
+
+					<div class="step-con step-answer">
+						<p class="user-item-note">密保问题是:<span class="question"></span></p>
+						<div class="user-item">
+							<label class="user-label" for="answer">
+								<i class="fa fa-key"></i>	
+							</label>
+							<input class="user-content" id="answer" placeholder="密保问题的答案" autocomplete="off"></input>
+						</div>
+						<a class="btn" id="submit-answer">下一步</a>
+					</div>
+
+					<div class="step-con step-password">
+						<p class="user-item-note">请输入新密码:</p>
+
+						<div class="user-item">
+							<label class="user-label" for="password">
+								<i class="fa fa-lock"></i>	
+							</label>
+							<input class="user-content" id="password" type="password" placeholder="新密码" autocomplete="off"></input>
+						</div>
+						<a class="btn" id="submit-password">下一步</a>
+					</div>
+			
+					
+					<div class="link-item">
+						<a class="link" href="./user-login.html">去登录 >></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

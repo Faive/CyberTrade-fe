@@ -1,0 +1,30 @@
+						<div class="user-info">
+							<div class="form-line">
+								<span class="label">用户名：</span>
+								<span class="text">{{username}}</span>
+							</div>
+
+							<div class="form-line">
+								<span class="label">手机号：</span>
+								<input class="input" id="phone" value="{{phone}}"></input>
+							</div>
+							
+							<div class="form-line">
+								<span class="label">邮箱：</span>
+								<input class="input" id="email" value="{{email}}"></input>
+							</div>
+							
+							<div class="form-line">
+								<span class="label">密保问题：</span>
+								<input class="input" id="question" value="{{question}}"></input>
+							</div>
+							
+							<div class="form-line">
+								<span class="label">密保答案：</span>
+								<input class="input" id="answer" value="{{answer}}"></input>
+							</div>
+							<div class="btns">
+								<a class="btn" href="./user-center.html">取消</a>
+								<a class="btn btn-submit">更新</a>
+							</div>
+						</div>
