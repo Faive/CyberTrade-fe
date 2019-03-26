@@ -1,4 +1,128 @@
-body{
+ .keyword-list{
+ 	float: left;
+	width: 190px;
+	height: 350px;
+	padding: 10px 0px;
+	margin-right: 10px;
+	background: #fff;
+}
+.keyword-list .keyword-list-item{
+	padding-left: 15px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+/*.keyword-list .keyword-list-item .fa{
+	width: 15px;
+	text-align: center;
+}*/
+.keyword-list .keyword-list-item:hover{
+	background: #e6e6e6;
+}
+
+
+.keyword-list .keyword-list-item .link{
+	margin-right: 5px;
+	color: #7c7c7c;
+}
+
+.keyword-list .keyword-list-item .link:hover{
+	color: #338FCC;
+}
+
+.banner-con{
+	width: 880px;
+	height: 370px;
+	float: left;
+	background: #eee;
+}
+
+.banner-con .loading{
+	margin: 150px auto;
+}
+
+.banner-con .banner-img{
+	width: 100%;
+	height: 370px;
+}
+
+.banner-con .banner-arrow{
+	position: absolute;
+	top: 160px;
+	width: 30px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	color: #eee;
+	background: #338fcc;
+	opacity: 0.2;
+	cursor: pointer;
+
+}
+
+.banner-con .banner-arrow:hover{
+	background: #338fcc;
+	opacity: 0.7;
+}
+
+.banner-con .banner-arrow.pre{
+	left: 0;
+}
+.banner-con .banner-arrow.next{
+	right: 0;
+}
+
+
+  
+.new-goods-list .new-goods-item{
+	float: left;
+	height: 275px;
+	width: 178px;
+	margin-top: 20px;
+	background: #fefefe;
+	border-right: 2px solid #f6f6f6;
 	
-	color: #ccc;
+}
+
+.new-goods-list .new-goods-item .goods-image{
+	width: 140px;
+	height: 140px;
+	margin: 20px auto;
+	border: 0;
+	display: none;
+}
+.new-goods-item.title{
+	background: #338fcc;
+	text-align: center;
+}
+
+.new-goods-item.title .title1{
+	padding-top: 80px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.new-goods-item.title .title2{
+    color: rgba(255,255,255,0.5);
+}
+
+.new-goods-item .description{
+	text-align: center;
+	font-size: 13px;
+	color: #333333;
+	padding: 5px 5px 20px 20px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.new-goods-item .price-item{
+	margin: 0 auto;
+	text-align: center;
+	background: #338FCC;
+	color: #fefefe;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100px;
+	border-radius: 1px;
 }
