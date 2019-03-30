@@ -1,6 +1,7 @@
 'user strict'
 require('./index.css');
 require('page/common/nav/index.js');
+require('page/common/header/index.js');
 var navSide = require('page/common/nav-side/index.js');
 var _ct = require('util/cybertrade.js');
 var _user = require('service/user-service.js');

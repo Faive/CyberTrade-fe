@@ -49,7 +49,7 @@ var page = {
 			},
 			function(res){
 				for (var i = 1; i <=5; i++) {
-					$('.new-goods-item.item-' + i).find('.link').attr('href', './detail.html?productId=' + res.id)
+					$('.new-goods-item.item-' + i).find('.link').attr('href', './product-detail.html?productId=' + res.id)
 					.find('.loading').hide()
 					.siblings('.goods-image').show().attr('src', res.imageHost + res.mainImage)
 					.siblings('.description').text(res.name)

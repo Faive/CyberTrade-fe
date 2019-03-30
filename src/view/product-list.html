@@ -21,15 +21,25 @@
 	</div>
 		
 	<div class="page-wrap w">
-		<%= require('html-loader!./layout/nav-side.html') %>
-		<div class="content with-nav">
-			<div class="panel">
-				<div class="panel-title">用户信息</div>
-				<div class="panel-body">
-					<div class="loading"></div>
-				</div>
-			</div>
+		<ul class="sort-con">
+			<li class="sort-item active" data-type="default">默认排序</li>
+			<li class="sort-item" data-type="price">
+				<span>价格</span>
+				<i class="fa fa-long-arrow-up"></i>
+				<i class="fa fa-long-arrow-down"></i>
+			</li>
+		</ul> 
+
+		<ul class="product-list">
+			<div class="loading"></div>
+			<!-- html-loader加载 -->
+			
+		</ul>
+
+		<div class="pagination">
+			<!-- html-loader加载 -->
 		</div>
+		
 		
 	</div>
 	<%= require('html-loader!./layout/footer.html') %>

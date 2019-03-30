@@ -1,0 +1,151 @@
+/*左侧图片*/
+.introduction{
+	overflow: hidden;
+}
+.introduction .imag-con{
+	float: left;
+	width: 450px;
+}
+/*主图*/
+.imag-con .main-img-con{
+	height: 430px;
+	border: 1px solid #ddd;
+}
+.imag-con .main-img-con .main-img{
+	width: 100%;
+	height: 100%;
+}
+/*缩略图*/
+.imag-con .sub-img-list{
+	overflow: hidden;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+.imag-con .sub-img-list .sub-img-item{
+	float:left;
+	margin-right: 10px;
+	width: 78px;
+	height: 80px;
+	border: 2px solid #ddd;
+	cursor: pointer;
+}
+
+.imag-con .sub-img-list .sub-img-item:hover{
+	border: 2px solid #338FCC;
+}
+.imag-con .sub-img-list .sub-img-item .sub-img{
+	width: 100%;
+	height: 100%;
+}
+/*右侧信息*/
+.introduction .info{
+	float: left;
+	width: 600px;
+	margin-left: 30px;
+}
+
+.info .name{
+	font-size: 20px;
+    color: #666;
+    padding-top: 10px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.info .subtitle{
+	color: #338FCC;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.info .info-item {
+	color: #666;
+	margin: 50px  0;
+	margin-left: 60px;
+}
+
+.info .info-item .label{
+	margin-right: 5px;
+}
+.info .info-item .price{
+	
+	font-size: 25px;
+	color: #338FCC;
+}
+
+
+
+.info .info-item .count{
+	width: 41px;
+	height: 41px;
+	border: 1px solid #ddd;
+	text-align: center;
+	outline: none;
+}
+.info .info-item .btn-count{
+	margin-left: -1px;
+	position: absolute;
+	line-height: 20px;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #ddd;
+	background: #ccc;
+	font-size: 18px;
+	cursor: pointer;
+	text-align: center;
+}
+.btn-count.plus{
+
+}
+.btn-count.minus{
+	margin-top: 21px;
+}
+
+
+.detail{
+	margin-top: 20px;
+}
+
+.detail .detail-tab .tab-list{
+	overflow: hidden;
+	background: #eee;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #338FCC;
+}
+
+.detail-tab .tab-list .tab-item{
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.detail-tab .tab-list .tab-item.active{
+	background:#338FCC;
+	color: #fefefe;
+}
+
+.detail .detail-con{
+	background: #fefefe;
+}
+
+.detail .detail-con img{
+	margin: 0 auto;
+}
+
+.detail .detail-con p{
+	padding: 10px 50px 40px 40px;
+}
+
+.error-tips{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 20px;
+	color:#338FCC;
+}

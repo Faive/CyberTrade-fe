@@ -1,0 +1,17 @@
+<div class="pagination-con">
+	{{#pageData}}
+		{{#disabled}}
+			<span class="label-item disabled" data-value="{{value}}">{{label}}</span>
+		{{/disabled}}
+		{{^disabled}}
+			{{#isSelected}}
+				<span class="label-item isSelected" data-value="{{value}}">{{label}}</span>
+			{{/isSelected}}
+			{{^isSelected}}
+				<span class="label-item" data-value="{{value}}">{{label}}</span>	
+			{{/isSelected}}
+		{{/disabled}}
+		
+	{{/pageData}}
+	<span class="label-total">共 {{pages}} 页</span>
+</div>
