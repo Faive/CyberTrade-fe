@@ -89,7 +89,7 @@ var page = {
 
     //数量加减
         $(document).on('click', '.btn-count', function(){
-          var curCount = parseInt($('.count-input').val());
+          var curCount = parseInt($(this).siblings('.count-input').val());
           var stock = $(this).siblings('.count-input').data('stock');
           var productId = $(this).parents('.cart-table.list-item').data('productid');
           var tempCount = 0;
@@ -99,6 +99,7 @@ var page = {
           else{
             tempCount = curCount - 1;
           }
+          console.log('curCount :' + curCount + ',stock: '+ stock + ',tempCount: ' + tempCount );
           if((tempCount > 0 && tempCount <= stock)){
             //更新数据再加载
             _this.updateCartInfo(productId, tempCount);
@@ -204,7 +205,9 @@ var page = {
         this.data.checkedProductId = '';
         for (var i = 0; i < length; i++) {
           if(this.data.cartInfo.cartProductVoList[i].productChecked === 1){
-              this.data.totalCount ++;
+              //计算选中件数
+              this.data.totalCount = this.data.totalCount + this.data.cartInfo.cartProductVoList[i].quantity;
+              //记录选中id
               this.data.checkedProductId = this.data.checkedProductId 
               + this.data.cartInfo.cartProductVoList[i].productId;
               this.data.checkedProductId = this.data.checkedProductId  + (i === length-1 ? '' : ',');
