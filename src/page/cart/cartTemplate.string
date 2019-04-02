@@ -1,0 +1,101 @@
+	{{#cartInfo}}
+		<div class="cart">
+			<div class="cart-header">
+				
+				<table class="cart-table header">
+					<tr>
+						<th class="cell select">
+							<label class="cart-label">
+								{{#allChecked}}
+								<input class="select-all" type="checkbox" checked="checked"></input>
+								{{/allChecked}}
+								{{^allChecked}}
+								<input class="select-all" type="checkbox" ></input>
+								{{/allChecked}}
+
+								<span>全选</span>
+							</label>
+						</th>
+						<th class="cell info">商品</th>
+						<th class="cell price">单价</th>
+						<th class="cell count">数量</th>
+						<th class="cell total">小计</th>
+						<th class="cell opera">操作</th>
+					</tr>
+				</table>
+
+			</div>
+
+			<div class="cart-list">
+				{{#cartProductVoList}}
+				<table class="cart-table list-item" data-productId = {{productId}} >
+					<tr>
+						<td class="cell select">
+							{{#productChecked}}
+								<input class="select" type="checkbox" checked="checked" ></input>
+							{{/productChecked}}
+							{{^productChecked}}
+								<input class="select" type="checkbox" ></input>
+							{{/productChecked}}
+							
+						</td>
+						<td class="cell info">
+							
+							<a class="link" href="./product-detail.html?productId={{{productId}}}">
+							<img class="p-img" src={{imageHost}}{{productMainImage}}></img>
+							{{productName}}{{productSubtitle}}</a>
+						</td>
+						<td class="cell price">￥{{productPrice}}</td>
+						<td class="cell count">
+							<input class="btn-count minus"value="-" readonly="readonly"></input>
+							<input class="count-input" value={{quantity}} data-stock={{productStocks}}></input>
+							<input class="btn-count plus" value="+" readonly="readonly"></input> 
+						</td>
+						<td class="cell total">￥{{productTotalPrice}}</td>
+						<td class="cell opera">
+							<span class="link delete">删除</span>
+						</td>
+					</tr>
+				</table>
+				{{/cartProductVoList}}
+
+			</div>
+
+			<div class="cart-toolbar">
+				<div class="select-con">
+						<label class="cart-label">
+							{{#allChecked}}
+								<input class="select-all" type="checkbox" checked="unchecked"></input>
+							{{/allChecked}}
+							{{^allChecked}}
+								<input class="select-all" type="checkbox" ></input>
+							{{/allChecked}}
+							<span>全选</span>
+						</label>
+				</div>
+				<div class="delete-con">
+						<a class="link delete-select-btn">删除选中商品</a>				
+				</div>
+				<div class="count-sum">
+					已选择
+					<span class="count">{{totalCount}}</span>
+					件商品
+				</div>
+				<div class="price-sum">		
+					总价:
+					<span class="sumPrice">￥{{cartTotalPrice}}</span>		
+				</div>
+				<div class="submit-con">
+					<div>
+						<div class="btn submit">去结算</div>						
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	{{/cartInfo}}
+	{{^cartInfo}}
+		<p class="error-tips">购物车空空如也! <a class="link" href="./index.html">去购物>></a></p>
+	{{/cartInfo}}
+				
