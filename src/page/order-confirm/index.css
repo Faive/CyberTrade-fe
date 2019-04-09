@@ -1,0 +1,231 @@
+.confirm-title{
+	font-size: 16px;
+	color: #666;
+}
+.confirm{
+	margin-top: 10px;
+	border: 1px solid #f0f0f0;
+	background: #fefefe;
+	padding: 0 20px;
+}
+
+.frame{
+	border-bottom: 1px solid #f0f0f0;
+	padding: 15px 0;
+}
+
+.frame .title{
+	font-size: 15px;
+}
+
+.frame .body{
+	padding: 5px 20px;
+	overflow: hidden;
+}
+
+.address-item{
+	margin: 5px 5px 0 5px;
+	width: 200px;
+	padding: 5px;
+	float: left;
+	border: 3px dashed #ccc;
+	cursor: pointer;
+}
+
+.address-item.selected{
+	border: 3px dashed #338FCC;
+}
+
+.address-item .main-info{
+	color: #666;
+	overflow: hidden;
+	font-size: 16px;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.address-item .detail{
+	overflow: hidden;
+	height: 40px;
+	line-height: 20px;
+}
+
+.address-item .adress-opera{
+	text-align: right;
+	margin-right: 5px;
+	visibility: hidden;
+}
+
+.address-item:hover{
+	background: #fefeee;
+}
+
+.address-item:hover .adress-opera{
+	visibility: visible;
+}
+.address-item.add{
+	padding: 8px 5px;
+	text-align: center;
+	color: #ccc;
+}
+
+.address-item.add:hover{
+	color: #338FCC;
+	opacity: .8;
+}
+.address-item.add .fa{
+	padding-top: 4px;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.product-table{
+	margin: 10px auto ;
+	width: 90%;
+}
+
+.product-table .cell-img{
+	width: 10%;
+	text-align: center;
+}
+
+.product-table .cell-img .p-img{
+	width: 80px;
+    height: 80px;
+}
+
+.product-table .cell-info{
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+	width: 10%;
+	text-align: center;
+}
+.product-table .cell-price{
+	font-size: 14px;
+	color: #338FCC;
+	width: 10%;
+	text-align: center;
+}
+.product-table .cell-count{
+	width: 5%;
+	text-align: center;
+}
+.product-table .cell-total{
+	width: 10%;
+	text-align: center;
+}
+
+.submit-con{
+	margin-top: 10px;
+	text-align: right;
+}
+.submit-con .submit-info{
+	padding: 20px 15px;
+}
+
+.submit-info .total-price{
+	font-size: 15px;
+	color: #338FCC;
+}
+
+.submit-con .shipping-address{
+	padding: 20px 0;
+	background: #fefefe;
+	padding-right: 15px;
+}
+
+.submit-con .btn{
+	margin:  15px;
+}
+
+.error-tips{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 16px;
+	color:#338FCC;
+}
+
+/*pop panel*/
+
+.popPanel-wrap{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #dedede;
+	background: rgba(0,0,0,.5);
+}
+
+.popPanel{
+	background: #fefefe;
+	margin: 200px auto;
+	width: 400px;
+	border-radius: 2px;
+	padding: 15px;
+}
+
+.popPanel .header{
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+.popPanel .header .title{
+	float: left;
+	width: 70%;
+	color: #444;
+	font-size: 18px;
+}
+
+.popPanel .header .fa{
+	font-size: 15px;
+	float: left;
+	width: 30%;
+	text-align: right;
+	cursor: pointer;
+}
+
+
+.popPanel .body{
+	
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.popPanel .body .form .form-line{
+
+	font-size: 15px;
+	padding: 5px 0;
+}
+
+ .form .form-line .label{
+ 	width: 100px;
+ 	display: inline-block;
+ 	text-align: right;
+ 	height: 30px;
+ 	line-height: 30px;
+ }
+
+ .form .form-line .form-item{	
+  	padding: 2px 4px;
+  }
+
+  .form .form-line select{
+  	width: 85px;
+  }
+
+.form .form-line .btn.saveAddress{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 140px;
+	padding: 0 5px;
+	font-size: 15px;
+}

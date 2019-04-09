@@ -1,0 +1,20 @@
+					<div class="address-item-selectable">
+						{{#list}}
+						<div class="address-item" data-shippingid={{id}}>
+							<div class="main-info">{{receiverName}}&nbsp{{receiverPhone}}</div>
+							<div class="detail"> {{receiverProvince}}&nbsp{{receiverDistrict}}&nbsp{{receiverCity}}&nbsp{{receiverAddress}} </div>
+							<div class="adress-opera">
+								<span class="link adress-edit">编辑</span>
+								<span class="link address-delete">删除</span>
+							</div>
+						</div>
+					
+						{{/list}}
+					</div>
+
+					<div class="address-item add">
+						<div class="add">
+							<i class="fa fa-plus"></i>
+							<div class="text">添加新地址</div>
+						</div>
+					</div>

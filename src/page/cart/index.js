@@ -151,7 +151,7 @@ var page = {
           }
           else{
             //跳转订单页面
-            window.location.href = './confirm.html';                    
+            window.location.href = './order-confirm.html';                    
           }
         });         
 	},

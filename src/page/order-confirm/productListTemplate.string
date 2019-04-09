@@ -1,0 +1,25 @@
+					{{#cartProductVoList}}
+					{{#productChecked}}
+					<table class="product-table">
+						<tr>
+							<td class="cell-img">
+								<a href="./product-detail.html?productId={{{productId}}}" target="_blank">
+									<img class="p-img" src="{{{imageHost}}}{{{productMainImage}}}"></img>
+								</a>
+							</td>
+							<td class="cell-info">
+								<a class="link" href="./product-detail.html?productId={{{productId}}}" target="_blank">
+									{{productName}}
+								</a>
+							</td>
+							<td class="cell-price">￥{{productPrice}}</td>
+							<td class="cell-count">{{quantity}}</td>
+							<td class="cell-total">￥{{productTotalPrice}}</td>
+						</tr>
+					</table>
+					{{/productChecked}}
+					{{/cartProductVoList}}
+					
+					{{^cartProductVoList}}
+						<p class="error-tips">未选中任何商品   <a class="link" href="./index.html">去购物>></a></p>
+					{{/cartProductVoList}}

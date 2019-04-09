@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= require('html-loader!./layout/head-common.html') %>
+	<title><%=htmlWebpackPlugin.options.title%> - CyberTrade</title>	
+</head>
+
+<body>
+	<%= require('html-loader!./layout/nav.html') %>
+	<%= require('html-loader!./layout/nav-simple.html') %>
+	
+	<div class="w"></div>
+	<div class="page-wrap w">
+		<span class="confirm-title">填写并核对订单信息</span>
+		<div class="confirm">
+			<div class="frame address">
+				<h1 class="title">收货地址</h1>
+				<div class="body">
+					<!-- 动态渲染 -->
+				</div>
+			</div>
+			<div class="frame product">
+				<h1 class="title">商品清单</h1>
+				<div class="body">
+					<!-- 动态渲染 -->
+				</div>
+			</div>
+
+		</div>
+		<div class="submit-con">
+					<!-- 动态渲染 -->	
+		</div>
+
+		<div class="pop-panel-con">
+					<!-- 动态渲染 -->	
+		</div>
+
+	</div>
+	<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

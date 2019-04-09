@@ -1,0 +1,20 @@
+				<div class="submit-info">
+					<span class="count">{{totalCount}}</span>
+					<span>件商品，应付金额：</span>
+					<span class="total-price">￥{{totalPrice}}</span>
+				</div>
+				
+				{{#selectedShippingAddress}}
+				<div class="shipping-address">寄送至: 
+					<span class="address">{{receiveName}}{{receiveAddress}}</span>
+				</div>
+				{{/selectedShippingAddress}}
+
+				{{^selectedShippingAddress}}
+				<div class="shipping-address">
+					请在上方选择收货地址 ! 
+				</div>
+				{{/selectedShippingAddress}}
+
+
+				<div class="btn">提交订单</div>
