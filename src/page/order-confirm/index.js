@@ -146,7 +146,7 @@ var page = {
               shippingId : shippingId
             },
             function(res){
-              window.location.href =  './payment.html?orderNumber=' + res.orderNo;
+              window.location.href =  './order-detail.html?orderNo=' + res.orderNo + '&toPay=true';
             },
             function(errMsg){
               _ct.errorTips(errMsg);

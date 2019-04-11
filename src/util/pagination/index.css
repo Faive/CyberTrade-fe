@@ -19,12 +19,14 @@
 .pagination-con .label-item.disabled{
 	color: #ccc;
 	background: #f6f6f6;
+	cursor: not-allowed;
 }
 
 .pagination-con .label-item.isSelected{
 	color: #338FCC;
 	border: none;
 	background: #f6f6f6;
+	cursor: default;
 }
 
 .pagination .label-total{

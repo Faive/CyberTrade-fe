@@ -31,9 +31,9 @@ Pagination.prototype.render = function(userOption) {
 	}
 
 	//只有一页 就不显示
-	if(this.option.pages <= 1){
-		return;
-	}
+	// if(this.option.pages <= 1){
+	// 	return;
+	// }
 
 	//渲染
 	this.option.container.html(this.getPaginationHtml());

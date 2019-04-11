@@ -1,0 +1,22 @@
+					{{#orderItemVoList}}
+					<table class="product-table">
+						<tr>
+							<td class="cell-img">
+								<a href="./product-detail.html?productId={{{productId}}}" target="_blank">
+									<img class="p-img" src="{{{imageHost}}}{{{productImage}}}"></img>
+								</a>
+							</td>
+							<td class="cell-info">
+								<a class="link" href="./product-detail.html?productId={{{productId}}}" target="_blank">
+									{{productName}}
+								</a>
+							</td>
+							<td class="cell-price">￥{{currentUnitPrice}}</td>
+							<td class="cell-count">{{quantity}}</td>
+							<td class="cell-total">￥{{totalPrice}}</td>
+						</tr>
+					</table>
+					{{/orderItemVoList}}
+
+
+
